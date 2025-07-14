@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi meme tucututu<3</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">Sos mi todo, te amo mi princesa. <3</h1>
+        <p class="fade-in">Mi bebe, te amo hoy, ayer y siempre.</p>
+        <button class="pulse" onclick="mostrarMensaje()">Presiona para una sorpresa</button>
+        <div id="mensaje-sorpresa" style="display: none;">
+            <p class="fade-in">Me haces feliz todos los días mi bebe. Desde el 3 de junio de 2024, mi vida es mil veces mejor.</p>
+            <img src="imagenes/foto-cumple.jpg" alt="Nuestra foto" class="foto zoom-in">
+            <button onclick="cambiarFoto()">Siguiente foto</button>
+        </div>
+    </div>
+    <audio id="musica" loop>
+        <source src="musica/rocket-powers.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+    <button onclick="document.getElementById('musica').play()">Tocar música</button>
+    <script src="script.js"></script>
+</body>
+</html>
